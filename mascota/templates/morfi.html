@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coma carlo, coma!! </title>
+    <link rel="shortcut icon" href="{% static 'mm/ico.ico' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/formulario.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'styles/css/styles.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header class="header-text">
+            <h1> Bienvenido a <span class="badge rounded-pill bg-success justify-content-center"> {{nombre}} </span> </h1>
+        </header>
+        
+        <div class="contenedor-carlito2">
+            <img src="{% static 'mm/slays/Sprite-0001.png' %}" class="mx-auto d-block img-fluid carl-sex2">
+            
+            <div class="saludable bg-success">
+                <h3 class=""> Saludable: </h3>
+                <form>
+                    {% csrf_token %}
+                    <button class="botones-comida" type="submit"> 
+                        <img src="{% static 'mm/morfi/creatina.png' %}"> 
+                    </button>
+
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/ensalada.png' %}">
+                    </button>
+
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/pollo.png' %}">
+                    </button>
+
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/pescado.png' %}">
+                    </button>
+                </form>    
+            </div>
+
+            <div class="chatarra bg-danger">
+                <h3 class=""> Chatarra: </h3>
+                <form method="POST">
+                    {% csrf_token %}
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/mcdonalds.png' %}">
+                    </button>
+
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/ferne.png' %}">
+                    </button>
+
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/viagra.png' %}">
+                    </button>
+
+                    <button class="botones-comida"> 
+                        <img src="{% static 'mm/morfi/laxante.png' %}">
+                    </button>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'js/img.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

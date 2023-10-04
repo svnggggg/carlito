@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stats </title>
+    <link rel="shortcut icon" href="{% static 'mm/ico.ico' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/formulario.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header class="header-text">
+            <h1> Bienvenido a <span class="badge rounded-pill bg-success justify-content-center"> Carlito </span> </h1>
+        </header>
+        
+        <div class="contenedor-carlito">
+            <img id="carlo-base" src="{% static 'mm/slays/Sprite-0001.png' %}" class="mx-auto d-block img-fluid carl-sex">
+            <ul class="h4 ul-stats">
+                <li>
+                    <p class="salud badge rounded-pill bg-success "> Salud de tu bicho: {{salud}} </p>
+                </li>
+
+                <li>
+                    <p class="hambruna badge rounded-pill bg-success"> Hambruna: {{hambre}} </p>
+                </li>
+
+                <li>
+                    <p class="diversion badge rounded-pill bg-success "> Diversion: {{diverision}} </p>
+                </li>
+
+                <li>
+                    <p class="gympower badge rounded-pill bg-success "> Nivel de Gymrat: {{gympower}} </p>
+                </li>
+            </ul>
+            <!-- <a href="./carlo.html" class="badge rounded-pill bg-primary href"> Menu/ </a> -->
+        </div>
+    </main>
+    <!-- <script src="./js/img.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
