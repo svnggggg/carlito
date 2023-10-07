@@ -15,7 +15,7 @@
 <body>
     <main class="container">
         <header class="header-text">
-            <h1> Bienvenido a <span class="badge rounded-pill bg-success justify-content-center"> Carlito </span> </h1>
+            <h1> Bienvenido a <span class="badge rounded-pill bg-success justify-content-center"> {{nombre}} </span> </h1>
         </header>
         
         <div class="contenedor-carlito">
@@ -43,7 +43,9 @@
                 </div>
             </div>
 
-            <button class="btn btn-success boton-carlo"> Stats </button>
+            <form method="GET" action="{% url 'stats' %}">
+                <button class="btn btn-success boton-carlo"> Stats </button>
+            </form>
 
             <button class="btn btn-warning boton-carlo"> Gym </button>
         </div>

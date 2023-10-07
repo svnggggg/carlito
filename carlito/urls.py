@@ -19,13 +19,12 @@ from django.urls import path
 from mascota import views
 
 urlpatterns = [
+    path('', views.login, name='index'),
     path('admin/', admin.site.urls),
-    path('prueba/', views.prueba, name='prueba'),
     path('login/', views.login, name='login'),
     path('carlo/', views.carlo, name='carlo'),
     path('stats/', views.stats, name='stats'),
     path('comer/', views.comer, name='comer'),
-    path('banio/', views.banio, name='banio'),
-    
+    path('banio/', views.banio, name='banio')
     # path('gym/', views.gym, name='gym'),
 ]
