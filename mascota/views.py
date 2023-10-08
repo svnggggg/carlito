@@ -13,7 +13,7 @@ def login(request):
 
 def carlo(request):
     return render(request, 'carlo.html', {
-        'nombre': 'mipene123'
+        'nombre': 'D.C.O.P.N'
     })
 
 def stats(request):
@@ -27,11 +27,11 @@ def stats(request):
 def comer(request):
     carlo = mascota.objects.get(nombre = "carlo")
     if (request.method == 'GET'):
-        return render(request, 'morfi.html', {'nombre' : carlo.nombre})
+        return render(request, 'comer.html', {'nombre' : carlo.nombre})
     elif (request.method == 'POST'):
         if (carlo.hambre > 0): carlo.hambre -= 10
         carlo.save()
-        return redirect('/stats')
+        return redirect('/carlo')
 
 def banio(request):
     return render(request, 'banio.html')

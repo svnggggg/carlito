@@ -34,17 +34,17 @@ main.container {
   height: auto; }
 
 .contenedor-carlito, .contenedor-carlito2 {
-  display: inline-block;
+  display: inline;
   max-width: auto;
   padding: 1.5em;
   background-color: #18414E;
   margin: 2em 1em;
   border: #040710 6px solid; }
-  .contenedor-carlito .boton-carlo, .contenedor-carlito2 .boton-carlo {
+  .contenedor-carlito .formulario-carlo, .contenedor-carlito2 .formulario-carlo {
+    display: inline-block;
     border: 4px #000000 solid;
     margin-left: 1.5em;
-    margin-bottom: 1em;
-    border-radius: 30%; }
+    margin-bottom: 1em; }
 
 .contenedor-carlito2 {
   max-width: 60%; }

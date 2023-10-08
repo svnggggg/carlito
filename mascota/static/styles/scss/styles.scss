@@ -46,20 +46,21 @@ main.container {
 }
 
 .contenedor-carlito, .contenedor-carlito2{
-    display: inline-block;
+    display: inline;
     max-width: auto;
     padding: 1.5em;
     background-color: $--background1;
     margin: 2em 1em;
     border: $--border;
 
-    .boton-carlo{
+    .formulario-carlo{
+        display: inline-block;  
         border: $--border2;
         margin-left: 1.5em;
         margin-bottom: 1em;
-        border-radius: 30%;
     }
 }
+
 
 .contenedor-carlito2{
     max-width: 60%;

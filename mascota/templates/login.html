@@ -27,13 +27,13 @@
           <input name="Email" required="" placeholder="Ingrese su mail" type="email">
           <button class="button_submit btn btn-warning"> Crear cuenta </button>
           <button class="button_submit btn btn-success" type="submit"> Iniciar sesión </button>
+          {% if failed == True %}
+            <button class="btn btn-danger rounded-pill button_submit"> 
+              <h3> INCORRECTO!! </h3>
+            </button>
+          {% endif %}
         </form>
       </section>
-      {% if failed == True %}
-        <section class="alert alert-danger">
-          <h3>¡FALLIDO!</h3>
-        </section>
-      {% endif %}
     </div>
   </main>
 
